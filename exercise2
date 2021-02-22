@@ -1,0 +1,17 @@
+SELECT 
+    'Home_Page' Page, 
+     COUNT(Home_Page) counts
+FROM
+    Input_table 
+UNION 
+SELECT 
+    'Product_Page' Page, 
+     COUNT(Product_Page) counts
+FROM
+    Input_table
+UNION 
+SELECT 
+    'Warranty_Page' Page, 
+     COUNT(Warranty_Page) counts
+FROM
+    Input_table;
